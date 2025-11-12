@@ -2,10 +2,22 @@ const reset = document.getElementById('reset');
 const bloco = document.getElementById('bloco');
 const mais = document.getElementById('add')
 const menos = document.getElementById('sub')
+const cinza = document.getElementById('cinza')
+const apagar = document.getElementById('apagar')
 
 const tamBloco = 800-4;
 
 let nDeQuadradosPorEixo = 16;
+
+let cor = 333
+
+cinza.addEventListener('click', () => {
+    cor = '333'
+})
+
+apagar.addEventListener('click', () => {
+    cor = 'FFF'
+})
 
 mais.addEventListener('click', () => {
     nDeQuadradosPorEixo++
@@ -29,7 +41,7 @@ function criarGrid(nDeQuadradosPorEixo) {
     quadrado.style.width = `${tamQuadrado}px`;
     quadrado.style.height = `${tamQuadrado}px`;
     quadrado.addEventListener('mouseenter', () => {
-      quadrado.style.background = '#333';
+      quadrado.style.background = `#${cor}`;
     });
     bloco.appendChild(quadrado);
   }

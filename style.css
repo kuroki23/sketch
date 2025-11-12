@@ -49,7 +49,17 @@ button {
     width: 60px;
 }
 
-#maisemenos {
+.maisemenos {
     display: flex;
     flex-direction: row;
+}
+
+#cinza {
+    background-color: #333;
+    margin-top: 10px;
+}
+
+#apagar {
+    background-color: white;
+    margin-top: 10px;
 }
