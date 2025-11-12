@@ -1,0 +1,55 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+#bloco {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid #000;
+    height: 800px;
+    width: 800px;
+}
+
+button {
+    padding: 12px;
+    width: 120px;
+    font-size: medium;
+    font-weight: bold;
+}
+
+#left {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid black;
+    height: 800px;  
+    width: 200px;
+}
+.quadrado {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.simbolo {
+    width: 60px;
+}
+
+#maisemenos {
+    display: flex;
+    flex-direction: row;
+}
