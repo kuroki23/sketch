@@ -1,44 +1,59 @@
 body {
-    font-family: sans-serif;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: lightgray;
+  overflow: hidden;
+}
+
+.borda {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: white;
+  border-radius: 3%;
 }
 
 #bloco {
-    display: flex;
-    flex-wrap: wrap;
-    border: 2px solid #000;
-    height: 800px;
-    width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid #000;
+  height: 800px;
+  width: 800px;
+  background-color: white;
 }
 
 button {
-    padding: 12px;
-    width: 120px;
-    font-size: medium;
-    font-weight: bold;
+  padding: 12px;
+  width: 120px;
+  font-size: medium;
+  font-weight: bold;
 }
 
 #left {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-    margin: 20px;
-    border: 2px solid black;
-    height: 800px;  
-    width: 200px;
+  background-color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  border: 2px solid black;
+  height: 800px;
+  width: 200px;
+  margin: 40px;
 }
 .quadrado {
-    height: 50px;
-    width: 50px;
-    border: 1px solid black;
-    box-sizing: border-box;
+  height: 50px;
+  width: 50px;
+  border: 1px solid rgb(0, 0, 0);
+  box-sizing: border-box;
 }
 
 * {
@@ -46,20 +61,56 @@ button {
 }
 
 .simbolo {
-    width: 60px;
+  width: 60px;
 }
 
 .maisemenos {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 #cinza {
-    background-color: #333;
-    margin-top: 10px;
+  background-color: #333;
+  margin-top: 10px;
 }
 
 #apagar {
-    background-color: white;
-    margin-top: 10px;
+  background-color: white;
+  margin-top: 10px;
+}
+
+#colorido {
+  background: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+}
+
+.rodape {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  bottom: 0;
+  width: 200px;
+  height: 40px;
+}
+
+#nightmode {
+  background-color: grey;
+  display: flex;
+  background-image: url(pngtree-night-mode-icon-icon-symbol-dark-vector-png-image_37950516.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 40px;
 }

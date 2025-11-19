@@ -1,26 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Etch-a-Sketch</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="left">
-        <h3>Etch-a-Sketch</h3>
-        <button id="reset">Reset</button>
-        <div class=maisemenos>   
-            <button class=simbolo id="sub">-</button>
-            <button class=simbolo id="add">+</button>
-        </div>
-        <div class=maisemenos>   
-            <button class=simbolo id="cinza"></button>
-            <button class=simbolo id="apagar"></button>
-        </div>
-       
-    </div>
-    <div id="bloco"></div>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+  </head>
 
-    <script src="main.js"></script>
-</body>
+  <body>
+    <div class="borda" id="borda">
+      <div id="left">
+        <h3>Etch-a-Sketch</h3>
+        <div class="maisemenos">
+          <button id="reset">Reset</button>
+          <button id="resetgrid">Clear</button>
+        </div>
+
+        <div class="maisemenos">
+          <button class="simbolo" id="sub">-</button>
+          <button class="simbolo" id="add">+</button>
+        </div>
+        <button id="hold">Hold</button>
+        <div class="maisemenos">
+          <button class="simbolo" id="cinza"></button>
+          <button class="simbolo" id="apagar"></button>
+          <button class="simbolo" id="colorido"></button>
+          <input
+            class="simbolo"
+            type="color"
+            id="colorpicker"
+            value="#800000"
+          />
+        </div>
+        <div class="rodape">
+          <button id="nightmode"></button>
+        </div>
+      </div>
+      <div id="bloco"></div>
+    </div>
+  </body>
 </html>
